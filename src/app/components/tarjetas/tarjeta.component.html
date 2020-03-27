@@ -1,0 +1,10 @@
+<div class="card-columns m-5 animated fadeIn">
+    <div (click)="verPelicula(item)" *ngFor='let item of items' class="card puntero">
+        <div class="card">
+            <img [src]="item.poster_path | image" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{item.title}}</h5>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="row">
+
+    <div class="col-4">
+        <img [src]="infoPelicula.poster_path | image" class="img-thumbnail img-circle">
+    </div>
+
+    <div class="col-6">
+        <h3> {{infoPelicula.title}}</h3>
+        <p> {{infoPelicula.overview}}</p>
+    </div>
+
+    <div class="col text-right">
+        <button (click)="regresar()" class="btn btn-outline-danger"> Regresar</button>
+    </div>
+
+
+</div>
